@@ -1,0 +1,133 @@
+/*CARROSSEL*/
+
+.titulo__carrossel {
+    text-align: center;
+    width: 100%;
+    background-color: var(--cor-de-fundo);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-tema);
+    padding: 1em 0 ;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial !important;
+    margin: 0.5em 0 !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none !important; /* Força as setas a não serem exibidas */
+}
+
+/*CARD*/
+
+
+
+.apresentar__card {
+    color: var(--cor-tema);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0.75em;
+}
+
+.titulo__card {
+    font-size: 18px;
+    font-weight: bold;
+    color: #002F52;
+    padding: 0 0 0.75em;
+}
+
+.paragrafo__card {
+    font-size: 14px;
+}
+
+.container__descricao {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 0em 1.5em 0em;
+}
+
+.buttons__card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button__card {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-tema);
+    width: 161px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0em ;
+}
+
+.container__card {
+    background-color: var(--cor-de-fundo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em ;
+}
+
+.icones__card {
+    margin: 0 0.5em;
+}
+
+.botoes {
+    display: flex;
+}
+
+.estrela__card {
+    padding: 0 0 0.75em 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        width: 60%;
+    }
+    .swiper-slide {
+        padding: 10px;
+    }
+    .swiper-pagination {
+        margin: 3em 0 2em !important;
+    }
+    .container__card {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+    .container__carrossel {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__carrossel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 7%;
+        margin: 1em 20vw 1em 20vw;
+    }
+
+    .swiper-pagination {
+        margin: 0 !important;
+    }
+
+    .container__card {
+        margin-top: 1em;
+    }
+
+
+
+}

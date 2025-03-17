@@ -1,0 +1,56 @@
+/*SEÇÃO APRESENTAR*/
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--azul-degrade);
+    height: 215px;
+}
+
+.titulo__apresentar {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-de-fundo);
+
+}
+
+.paragrafo__apresentar {
+    font-weight: medium;
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    margin: 1em;
+}
+
+.input__apresentar {
+    width: 320px;
+    border-radius: 24px;
+    background-color: transparent;
+    border: 1px solid var(--cor-de-fundo);
+    color: var(--cor-de-fundo);
+    padding: 1em;
+}
+
+.input__apresentar::placeholder {
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    background: url("../assets/Buscar.svg");
+    background-repeat: no-repeat;
+    background-position: 0.25em;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .titulo__apresentar {
+        font-size: 36px;
+    }
+    .input__apresentar {
+        width: 476px;
+    }
+
+}
